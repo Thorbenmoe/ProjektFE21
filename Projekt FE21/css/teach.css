@@ -1,0 +1,76 @@
+h1.teach {
+    text-align: center;
+}
+
+.teachTable {
+    margin-left: 20%;
+    margin-top: 20%;
+}
+
+.videoBar {
+    background: var(--violet);
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+img.cross {
+    /* border-right: solid 1px; */
+    width: 25px;
+    border: solid 1px black;
+    padding: 3px;
+    border-radius: 100%;
+}
+
+h3.title:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.videoBar {
+    background: var(--violet);
+    width: 50vh;
+    padding: 8px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    /* border-radius: 20px; */
+    border: solid 1px black;
+}
+
+.videoHeadline {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+button.videoButton {
+    font-size: 15px;
+    font-weight: initial;
+    width: 45px;
+    height: 45px;
+}
+
+.imgVideoBar {
+    padding: 5px;
+    border-right: 1px solid #e87c7c
+}
+
+img.videoIconImg {
+    padding-left: 10px;
+}
+
+.successbar {
+    /* background: #e87c7c; while success*/
+    background-color: var(--violet);
+    border-radius: 10px;
+    border: solid 1px;
+    top: 5%;
+    position: absolute;
+    left: 37vh;
+    display: flex;
+    padding: 10px;
+    width: 75vh;
+}
