@@ -1,0 +1,174 @@
+    @media(max-width: 1000px) {
+        body {
+            overflow-x: hidden;
+            max-width: 500px;
+            font-family: "PT Sans";
+            z-index: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            width: 300px;
+            /* margin-left: 50vh; */
+            display: flex;
+            max-width: unset;
+            /* margin-left: 18vh; */
+            flex-direction: column;
+            margin-left: 25vh;
+        }
+        .upper,
+        .lower {
+            margin-bottom: 9px;
+            display: flex;
+            flex-direction: column;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+            /* display: flow-root; */
+        }
+        img.logo {
+            width: 0;
+        }
+        a#nav-Board {
+            display: none;
+        }
+        .dropdown-content {
+            display: none;
+            animation: dropdown-content-fade 0.5s ease-in-out forwards;
+        }
+        button#close {
+            display: none;
+        }
+        img.student {
+            width: 250px;
+            border: 2px black solid;
+            border-radius: 10px;
+        }
+        div#renderedIcons {
+            display: none;
+        }
+        .projectPresent {
+            width: 380px;
+            background: var(--violet);
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 50px;
+            flex-direction: column;
+        }
+        button.sumbitButton {
+            font-size: 12px;
+        }
+        .projectPresentR {
+            background: var(--violet);
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 50px;
+            flex-direction: column;
+        }
+        img.projImgR,
+        img.projImg {
+            display: flex;
+            cursor: pointer;
+            border-radius: 20px 20px 0px 0px;
+            /* width: 200px; */
+            background: var(--violet);
+            border: solid 1px;
+            border-right: solid 1px #009688;
+        }
+        img.projPopUpImg {
+            width: 250px;
+            height: 250px;
+        }
+        button {
+            width: 50px;
+            height: 50px;
+        }
+        div#popUpText {
+            height: 150px;
+            /* height: 50px; */
+            overflow: auto;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        form.form {
+            width: 380px;
+            margin-left: -50px;
+        }
+        .popUpHead {
+            display: none;
+        }
+        form#popUpForm,
+        form#popUpForm2 {
+            left: 15%;
+            top: 25%;
+            position: fixed;
+            border-radius: 20px;
+            background-color: var(--violet);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+            flex-direction: row-reverse;
+            height: 250;
+            width: 300px;
+            height: 450px;
+        }
+        button#navbar-toggler {
+            width: 60px;
+            height: 50px;
+        }
+        a.renderedIcon {
+            width: 300px;
+            height: 300px;
+        }
+        img.renderedIconImg {
+            width: 150px;
+            padding: 1px;
+            border: solid 1px black;
+            border-radius: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .dropdown:hover .dropdown-content {
+            z-index: 9999;
+            display: block;
+            /* display: flow-root; */
+        }
+        .submit {
+            /* font-size: 0; */
+            height: 100px;
+            width: 100px;
+            /* background-color: rgb(49, 194, 44); */
+        }
+        .navbar>.container,
+        .navbar>.container-fluid,
+        .navbar>.container-lg,
+        .navbar>.container-md,
+        .navbar>.container-sm,
+        .navbar>.container-xl,
+        .navbar>.container-xxl {
+            padding: 10px;
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .card-header:first-child {
+            width: 100vh;
+        }
+        .videoBar {
+            width: 250px;
+            border-radius: 20px;
+        }
+        .teachTable {
+            margin-left: 8px !important;
+            margin-top: 16px !important;
+        }
+        form#popUpDemoVideo {
+            width: 350px;
+            height: 500px;
+            border-radius: 20px;
+            background: var(--violet);
+        }
+    }

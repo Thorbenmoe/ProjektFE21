@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projektarbeit FE21</title>
+    <script src="../js/mini_backend.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../scripts/video.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../node_modules\bootstrap\dist\css\bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media-query.css" />
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+</head>
+
+
+
+<body id="projectPage" onload="init()">
+    <div class="d-flex board-container">
+        <div class="card-header">
+            <nav class="navbar-distance">
+                <div id="navbar" class="navbar bg-light">
+                    <a class="mt-4 brd-left-inactive join-logo"><img class="logo" src="../img/hsbkminilogo-removebg-preview.png" /></a>
+                    <a id="nav-Board" class="navbar-brand mt-5 brd-left-inactive" href="#aboutUs">ÜBER UNS</a>
+                    <a id="nav-work" class="navbar-brand mt-5 brd-left-inactive">UNSERE ARBEIT</a>
+                    <a id="nav-AddTask" class="navbar-brand brd-left-inactive" href="#sectionQuestion">FRAGE STELLEN</a>
+                    <div class="ruler"></div>
+                    <a id="nav-Impress" class="navbar-brand brd-left-inactive" href="../html/impressum.html">IMPRESSUM</a>
+                    <a id="nav-Privacy" class="navbar-brand brd-left-inactive" href="../html/datenschutz.html">DATENSCHUTZ</a>
+                    <div class="ruler"></div>
+                    <a id="nav-Backlog" class="navbar-brand brd-left-inactive" href="../html/modul1.html">CRASHKURS</a>
+                    <div class="ruler"></div>
+                    <div class="dropdown">
+                        <span id="downloads" class="navbar-brand mt-5 brd-left-inactive">DOWNLOADS</span>
+                        <div class="dropdown-content">
+                            <a class="navbar-brand mt-5 brd-left-inactive" href="#">Präsentation</a>
+                            <a class="navbar-brand mt-5 brd-left-inactive" href="#">Dokumentation</a>
+                            <a class="navbar-brand mt-5 brd-left-inactive" href="#">Stromlaufpläne</a>
+                        </div>
+                    </div>
+
+            </nav>
+            <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
+                <div class="container-fluid">
+                    <button onclick="openMenu()" id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+            </nav>
+            </div>
+
+
+            <!-- Headline  -->
+            <div class="container">
+                <div class="head">
+                    <div class="headLine">
+                        <h1>Die Projektarbeit der FE21</h1>
+                        <h2>Tia Portal trifft PLC SIM</h2>
+                    </div>
+
+
+                    <div id="developers" class="developers">
+                        <div class="upper">
+                            <div id="aboutUs" class="devDiv"> <img onclick="popUp(1)" id="students" class="students" src="../img/user1.jpg" alt="">
+                                <h3 id="subtext1">Emir Emkic</h3>
+                                <h5 id="subtext1_1">Erstellung der Projekte</h5>
+                            </div>
+                            <div class="devDiv"> <img onclick="popUp(2)" id="students" class="students" src="../img/user2.jpg" alt="">
+                                <h3 id="subtext2">Thorben Möller</h3>
+                                <h5 id="subtext2_1">Dokumentation und Präsentation</h5>
+                            </div>
+                        </div>
+                        <div class="lower">
+                            <div class="devDiv"> <img onclick="popUp(3)" id="students" class="students" src="../img/user3.jpg" alt="">
+                                <h3 id="subtext3">Merlin Iffland</h3>
+                                <h5 id="subtext3_1">Kommunikation zwischen den Programme</h5>
+                            </div>
+                            <div class="devDiv"> <img onclick="popUp(4)" id="students" class="students" src="../img/user4.jpg" alt="">
+                                <h3 id="subtext4">Giang Troug Luu</h3>
+                                <h5 id="subtext4_1">Verdrahtung</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Headline Ends -->
+
+
+                <!-- Content -->
+                <div id="ourWork" class="projects">
+                    <div class="upper">
+                        <div onclick="openDemo(0)" class="projectPresent">
+                            <a href="../html/modul1.html"><img class="projImg" src="../img/projekt.jpg"></a>
+                            <h4 class="h4">Effiziente Programmierung einer Hebebühne mit dem Siemens TIA Portal und dem PLC Lab: Eine Anleitung für Schüler und Studierende.</h4>
+                            <span class="text">"In diesem Leitfaden werden fortgeschrittene Techniken der Programmierung einer Hebebühne mit dem Siemens TIA Portal und dem PLC Lab behandelt. Schritt-für-Schritt-Anweisungen und praktische Beispiele helfen dabei, die Programmierung effizient und erfolgreich durchzuführen."</span>
+                        </div>
+                        <div class="projectPresent">
+                            <a onclick="playVideo()"><img class="projImgR" src="../img/modjourney2.PNG"></a>
+                            <h4 class="h4">Optimierte Abfüllanlage mit Größensortierung durch Siemens TIA PORTAL und PLC Visualisierung.</h4>
+                            <span class="text">"Die vorgestellte Automatisierte Abfüllanlage ermöglicht eine effiziente Befüllung und Sortierung von Dosen nach Größe durch die Verwendung von Siemens TIA PORTAL und PLC Visualisierung. Das Programm sorgt für eine zuverlässige und präzise Steuerung der Anlage."</span>
+                        </div>
+                    </div>
+                    <!-- <div class="lower">
+                        <div class="projectPresent"><img onclick="projectPopUp(3)" class="projImg" src="../img/projekt.jpg" alt="">
+                            <h4 class="h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis modi quisquam delectus non minus corporis magnam aperiam! Itaque hic facilis dicta et beatae tempore voluptate at, deleniti suscipit sed?</h4>
+                        </div>
+                        <div class="projectPresentR"><img onclick="projectPopUp(4)" class="projImgR" src="../img/projekt.jpg" alt="">
+                            <h4 class="h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis modi quisquam delectus non minus corporis magnam aperiam! Itaque hic facilis dicta et beatae tempore voluptate at, deleniti suscipit sed?</h4>
+                        </div>
+                    </div> -->
+                </div>
+
+
+                <!-- Demo Video -->
+                <div id="videoContent" class="videoContent">
+                    <video id="videoDemo" class="videoDemo" width="640" height="360" controls>
+                    <source src="../videos/2023-01-09_11-37-52.mkv" type="video/mp4">
+                  </video>
+                    <button onclick="closeVideo()" id="closeButton" class="videoButton">X</button>
+                </div>
+                <!-- Demo Video ends -->
+
+
+                <!-- Popup -->
+
+                <form class="row gy-4 border p-3 pb-5 needs-validation" id="popUpForm">
+                    <!-- Content Ends -->
+                    <!-- close Button -->
+                    <div class="close"><button type="button" onclick="closePopUp()">X</button></div>
+
+                    <!-- close Button ends -->
+                    <div class="popUpHead">
+                        <div id="popUpImgText" class="popUpImgText"></div>
+                    </div>
+                    <div class="popUpContent">
+                        <div id="popUpImg" class="popUpImg">
+                        </div>
+                        <div id="popUpText" class="popUpText">
+                            <div class="link"></div>
+                        </div>
+                    </div>
+                    <div class="renderedIcons" id="renderedIcons"></div>
+                </form>
+                <!-- Popup end -->
+
+
+                <!-- Popup2 -->
+                <form class="row gy-4 border p-3 pb-5 needs-validation" id="popUpForm2">
+                    <div class="close"><button type="button" onclick="closePopUp()">X</button></div>
+
+                    <!-- close Button ends -->
+                    <div class="popUpHead2">
+
+                        <div id="popUpImgText2" class="popUpImgText2"></div>
+                    </div>
+                    <div class="popUpContent2">
+                        <div id="popUpImg2" class="popUpImg2">
+                        </div>
+                        <div id="popUpText2" class="popUpText2">
+                            <div class="link"></div>
+                        </div>
+                    </div>
+                </form>
+                <!-- Popup end -->
+
+                <div id="sectionQuestion" class="headLine">
+                    <h1>Noch Fragen?</h1>
+                    <h2>Lass es uns gerne wissen!</h2>
+                </div>
+                <form class="form" action="https://thorben-moeller.developerakademie.net/send_mail/send_mail.php" method="POST">
+                    <h4>Name</h4>
+                    <input name="name" placeholder="Dein Name">
+                    <h4>Titel</h4>
+                    <input name="topic" placeholder="Titel">
+                    <h4>Kategorie</h4>
+                    <select class="form-select" aria-label="Default select example" id="category">
+                        <option selected="" value="Management">Beispielprojekt</option>
+                        <option value="Sales">TIA Portal</option>
+                        <option value="Product">PLC LAB</option>
+                        <option value="Marketing">Pallettenhubtisch</option>
+                      </select>
+
+                    <div class="col-md-6">
+                        <label for="validationDefault03" class="form-label">Fragentyp</label>
+                        <div class="form-control">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="choice" id="inlineRadio1" value="low">
+                                <label class="form-check-label" for="inlineRadio1">Technisch</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="choice" id="inlineRadio2" value="medium" checked="checked">
+                                <label class="form-check-label" for="inlineRadio2">Allgemein</label>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Beschreibung</h4>
+                    <div class="content"> <textarea name="message" placeholder="Deine Nachricht an uns"></textarea>
+
+                        <button class="sumbitButton" type="submit">senden </button></div>
+
+                </form>
+            </div>
+        </div>
+        <!-- Downloads -->
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="../scripts/popUp.js"></script>
+<script src="../scripts/page.js"></script>
+
+
+</html>

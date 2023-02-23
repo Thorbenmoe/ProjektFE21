@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handout</title>
+    <link rel="stylesheet" href="../css/handout.css">
+</head>
+
+<body onload="init()">
+    <div class="handout">
+
+
+        <div class="handoutBoxes">
+
+            <div class="box">
+                <img src="../img/hsbkminilogo-removebg-preview.png">
+
+                <h2 id="h2"></h2>
+                <canvas id="canvas" width="300" height="570"></canvas>
+                <div id="handOutBoxContent" class="handOutBoxContent">
+                    <div id="problem" class="problem">
+                        <h3 id="problemh31" class="problemh3">Alte Hardwareschnittstelle</h3>
+                        <h3 id="problemh32" class="problemh3">Alte Software</h3>
+                        <h3 id="problemh33" class="problemh3">Neue Hardware</h3>
+                        <h3 id="problemh34" class="problemh3">Alte Hardware kann nicht mit der neuen Kommunizieren</h3>
+                    </div>
+
+                    <div id="solution" class="solution">
+                        <h3 id="solutionh31" class="solutionh3">Neue Software</h3>
+                        <h3 id="solutionh32" class="solutionh3">Neue Hardwareschnittstelle</h3>
+                        <h3 id="solutionh33" class="solutionh3">Step7 → TIA Portal</h3>
+                        <h3 id="solutionh34" class="solutionh3"> GrafcetStudio</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <nav class="navbar" id="navbar">
+            <a onclick="initHandoutClick(0)" id=0 href="#">•</a>
+            <a onclick="initHandoutClick(1)" id=1 href="#">•</a>
+            <a onclick="initHandoutClick(2)" id=2 href="#">•</a>
+            <a onclick="initHandoutClick(3)" id=3 href="#">•</a>
+            <a onclick="initHandoutClick(4)" id=4 href="#">•</a>
+            <a onclick="initHandoutClick(5)" id=5 href="#">•</a>
+        </nav>
+        <!-- back or forward -->
+        <div class="btns">
+            <button onclick="back()" id="back">←</button>
+            <button onclick="next()" id="forward">→</button>
+        </div>
+        <!-- ends -->
+    </div>
+
+
+
+</body>
+<script src="../scripts/handout.js"></script>
+<script src="../scripts/canvas.js"></script>
+
+</html>

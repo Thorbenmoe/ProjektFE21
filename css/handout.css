@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(165, 164, 164);
+}
+
+.handoutBoxes {
+    min-height: 750px;
+    margin-top: 25px;
+    text-align: center;
+    width: 350px;
+    border: solid 1px;
+    /* border-radius: 20px; */
+    background: #797bbd;
+    border-radius: 20px;
+    box-shadow: 1px 2px 11px 0px;
+}
+
+.handOutBoxContent {
+    min-height: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+img {
+    border-radius: 20px;
+    border: solid 1px #797bbd;
+    margin: 8px;
+    background: #797bbd;
+}
+
+h2 {
+    border-bottom: solid 2px black;
+}
+
+.problem {
+    border: solid 1px;
+    margin: 10px;
+    border-radius: 20px;
+    background: #c77a7a;
+}
+
+.solution {
+    border: solid 1px;
+    margin: 10px;
+    border-radius: 20px;
+    background: #479d75;
+}
+
+button#back,
+button#forward {
+    font-size: 55px;
+    width: 90px;
+    height: 60px;
+    margin-left: 30px;
+    background: #797bbd;
+    margin-right: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 0px;
+}
+
+button#back:active {
+    background: #29295e;
+    color: white;
+}
+
+button#forward:active {
+    background: #29295e;
+    color: white;
+}
+
+nav#navbar {
+    font-size: 45px;
+    /* color: black; */
+    /* text-decoration: none; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
